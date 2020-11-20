@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SK2</title>
+        
+        <!--css 연결 소스-->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        
+        <!--제이쿼리 실행코드가 위에 bx slide 실행코드는 아래쪽-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+
+            $('.mgnb_wrap').hide();
+
+            $('.mgnb').click(function() {
+                $('.mgnb_wrap').fadeIn();
+            });
+
+            $('.close').click(function() {
+                $('.mgnb_wrap').fadeOut();
+            });
+            
+            
+            
+            $('.tab_s2,.tab_s3').hide();
+            
+            $('.tab_sub1').click(function(){
+                $('.tab_s1').fadeIn();
+                $('.tab_s2,.tab_s3').fadeOut();
+            });
+
+            $('.tab_sub2').click(function(){
+                $('.tab_s2').fadeIn();
+                $('.tab_s1,.tab_s3').fadeOut();
+            });
+                
+            $('.tab_sub3').click(function(){
+                $('.tab_s3').fadeIn();
+                $('.tab_s1,.tab_s2').fadeOut();
+            });
+            
+            $('#main_banner1').bxSlider({
+                auto: true,
+                controls: false
+            });
+            
+        });
+    </script>
+    
+</head>
+   
+    <body>
+    <!--header-->
+    <header id="header">
+    <div class="header_inner">
+        <h1><a href="#"><img src="images/logo.png" alt="sk2 로고"></a></h1>
+        <ul class="gnb1">
+            <li><a href="#">LIMITED EDITION</a></li>
+            <li><a href="#">VOGUING DANCE</a></li>
+            <li><a href="#">GIFT SETS</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+        </ul>
+        <ul class="gnb2">
+            <li><a href="#"><img src="images/location.png" alt="매장찾기"></a></li>
+            <li><a href="#"><img src="images/purchase.png" alt="구매하기"></a></li>
+        </ul>  
+        </div> 
+        
+        <!--mobile mgnb-->
+        <p class="mgnb"><a href="#"><img src="images/all_menu.png" alt="menu"></a></p>
+       <div class="mgnb_wrap">
+           <p class="close"><a href="#">close</a></p>
+        <ul class="gnb_mobile">
+        <li><a href="#">LIMITED EDITION</a></li>
+        <li><a href="#">VOGUING DANCE</a></li>
+        <li><a href="#">GIFT SETS</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+        </ul>
+       </div>     
+    </header>
+    
+    <!--main banner-->
+    <div class="shadow">
+    <section id="main_banner1"> 
+        <p class="main_banner1"></p>
+        <p class="main_banner2"></p>
+    </section>
+    </div>
+    
+    
+    <!--limited-->
+    <a name="location"></a>
+    <section id="limited">
+       <h2><span>LIMITED</span> EDITION</h2> 
+        <ul>
+            <li><a href="#">
+            <img src="images/section1.png" alt="상품1">
+            <p class="set">Skin Revitalizing Set</p>
+            <p>$369</p>
+            </a></li>
+            
+            <li><a href="#">
+            <img src="images/section2.png" alt="상품2">
+            <p class="set">Youthful Beauty Set</p>
+            <p>$497</p>
+            </a></li>
+            
+            <li><a href="#">
+            <img src="images/section3.png" alt="상품3">
+            <p class="set">Radiant Aura Set</p>
+            <p>$468</p>
+            </a></li>
+        </ul>
+    </section>
+    
+    <!--limited mobile-->
+    
+    <section id="limited_m">
+        <ul class="tab_s">
+            <li class="tab_s1"><a href="#">
+            <img src="images/mb1.png" alt="상품1">
+            <p class="set">Skin Revitalizing Set</p>
+            <p class="price">$369</p>
+            </a></li>
+            
+            <li class="tab_s2"><a href="#">
+            <img src="images/mb1.1.png" alt="상품2">
+            <p class="set">Youthful Beauty Set</p>
+            <p>$497</p>
+            </a></li>
+            
+            <li class="tab_s3"><a href="#">
+            <img src="images/mb1.1.1.png" alt="상품3">
+            <p class="set">Radiant Aura Set</p>
+            <p>$468</p>
+            </a></li>
+        </ul>
+        
+        <ul class="tab_sub">       
+            <li class="tab_sub1"><a href="#location">
+            <img src="images/mb1.png" alt="상품1">
+            </a></li>
+            
+            <li class="tab_sub2"><a href="#location">
+            <img src="images/mb1.1.png" alt="상품2">
+            </a></li>
+            
+            <li class="tab_sub3"><a href="#location">
+            <img src="images//mb1.1.1.png" alt="상품3">
+            </a></li>
+        </ul>
+    </section>
+    
+    <!--vogung-->
+    <section id="vogung">
+       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AZlTh7i-88g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <dl>
+        <dt>보깅댄스</dt>
+        <dd class="txt1">Your Statement<br>Your Bottle</dd>
+        <dd class="txt2">Your Statement Your Bottle</dd>
+        <dd>보깅 댄스는 자유, 젊음, 자신감 등을 표현할 수 있는 춤</dd>
+        </dl>
+    </section>
+    
+    <!--ㅡmodel-->
+    <section id="model">
+        <a href="#"><p class="model1"></p></a>
+        <a href="#"><p class="model2"></p></a>
+        <a href="#"><p class="model3"></p></a>
+    </section>
+    
+    <!--ㅡinsta-->
+    <section id="insta">
+        <h2>INSTAGRAM</h2> 
+        <ul>
+        <li><a href="#"><img src="images/insta1.jpg" alt="instagram reviwe1"></a></li>
+        <li><a href="#"><img src="images/insta2.jpg" alt="instagram reviwe2"></a></li>
+        <li><a href="#"><img src="images/insta3.jpg" alt="instagram reviwe3"></a></li>
+        <li><a href="#"><img src="images/insta4.jpg" alt="instagram reviwe4"></a></li>
+        </ul>
+        <p class="more"><a href="#">MORE</a></p>
+    </section>
+    
+    <footer id="footer">
+       <div class="footer_inner">
+        <ul class="txt1">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+        <br>
+        <address>
+            서울시 영등포구 국제금융로 10, 37층 / 대표 : 발라카 니야지 / 상담실 : 080-023-3333<br>
+            ©2020. Procter &amp; Gamble. All Rights Reserved. 
+        </address>
+        
+        <ul class="sns">
+            <li><a href="#"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="images/icon_instar.png" alt="instar"></a></li>
+            <li><a href="#"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+        </ul>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>

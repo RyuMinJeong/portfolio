@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 초기화 속성 */
+* {margin: 0; padding: 0;}
+ol,ul { list-style: none;}
+a:link, a:hover, a:active, a:visited { text-decoration: none; color: #000;}
+body { font-family: 'Noto Sans KR', sans-serif;
+ font-size: 16px; color: #000; line-height: 26px; min-width: 1400px; overflow-x: hidden; }
+
+/* back_bnt */
+.back { text-align: center; }
+.back_bt {  display: inline-block; padding: 20px; border-radius: 48%; background: #000; color: #fff; margin: 30px; box-sizing: border-box; transition: all 0.3s; margin-bottom: 30px;}
+.back a{ color: #fff; font-weight: bold;}
+.back .back_bt:hover { background: #fff; }
+.back .back_bt:hover a { color: #000; }
+
+/* top_bnt*/
+.x_bt a { position: absolute; top: 20px; right: 30px;}
+.top { position: fixed; right: 20px; bottom: 20px;}
+
+/* app */
+.b_ground { position: absolute; top: 0; left: 0; z-index: -999; }
+.home { position: absolute; top: 170px; right: 170px;  z-index: -9; }
+video { position: absolute; top: 289px; right: 303px;  z-index: -999; z-index: -99;}
+
