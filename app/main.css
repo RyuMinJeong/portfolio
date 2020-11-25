@@ -7,6 +7,8 @@ a:link, a:hover, a:active, a:visited { text-decoration: none; color: #000;}
 body { font-family: 'Noto Sans KR', sans-serif;
  font-size: 16px; color: #000; line-height: 26px; min-width: 1400px; overflow-x: hidden; }
 
+#wrap { position: relative; width: 1900px; }
+
 /* back_bnt */
 .back { text-align: center; }
 .back_bt {  display: inline-block; padding: 20px; border-radius: 48%; background: #000; color: #fff; margin: 30px; box-sizing: border-box; transition: all 0.3s; margin-bottom: 30px;}
